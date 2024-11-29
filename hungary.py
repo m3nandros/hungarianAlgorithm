@@ -2,11 +2,6 @@ import numpy as np
 from scipy.optimize import linprog
 
 def hungarian_alg(cost_matrix):
-    """
-    Реализация задачи о назначениях через линейное программирование.
-    :param cost_matrix: Матрица затрат (n x n)
-    :return: Список назначений и минимальная стоимость
-    """
     n = cost_matrix.shape[0]
 
     # Преобразуем задачу в задачу линейного программирования
